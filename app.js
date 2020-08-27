@@ -15,6 +15,8 @@ app.use('/', routes);
 
 app.use(errorHandler.notFound);
 
+app.use(errorHandler.common);
+
 app.listen(3000, () => {
   console.log('Application listen on port 3000');
 });
